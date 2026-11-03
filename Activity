@@ -1,0 +1,35 @@
+class Rectangle:
+    def __init__(self, width, height):
+        self.__width = width
+        self.__height = height
+
+    @property
+    def width(self):
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        self.__width = value
+
+    @property
+    def height(self):
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        self.__height = value
+
+
+# Create a Rectangle object
+rectangle = Rectangle(10, 5)
+
+# Access properties like regular variables
+print("Width:", rectangle.width)
+print("Height:", rectangle.height)
+
+# Change property values
+rectangle.width = 15
+rectangle.height = 8
+
+print("Updated width:", rectangle.width)
+print("Updated height:", rectangle.height)
