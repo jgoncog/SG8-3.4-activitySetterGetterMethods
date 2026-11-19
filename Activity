@@ -33,3 +33,6 @@ rectangle.height = 8
 
 print("Updated width:", rectangle.width)
 print("Updated height:", rectangle.height)
+print("hello") 
+
+
